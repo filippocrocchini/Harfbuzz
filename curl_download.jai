@@ -71,7 +71,6 @@ download :: (url: string, target: string) -> bool {
         print("Curl Error: %\n", error_message);
         return false;
     }
-    print_curl_stats();
     print("File % downloaded successfully!\n", target);
     return true;
 }
